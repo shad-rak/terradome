@@ -5,8 +5,7 @@ resource "aws_vpc" "vpn_test" {
   enable_dns_hostnames = true
   enable_dns_support   = true
 
-  tags {
+  tags = {
     Name = "vpn_test"
   }
 }
-
