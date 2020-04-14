@@ -13,7 +13,7 @@ resource "aws_vpc" "vpn_test" {
 #Create Internet Gateway and attach to VPC
 
 resource "aws_internet_gateway" "vpn_public" {
-  vpc_id = "aws_vpc.vpn_test.id"
+  vpc_id = "vpc-072b84ddbe104c241"
   tags = {
         Name = "vpn_gateway"
     }
